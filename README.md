@@ -9,29 +9,37 @@ A lightweight Lua plugin for Lex Editor that adds real-time word, line, and char
 - **Integrated UI:** Displays editor mode, filename, and cursor position.
 
 ## Installation
-
-Clone this repository directly into your Lex plugins directory:
-```bash
-# 1. Create the plugins directory
-mkdir -p ~/.config/lex/plugins/
-
-# 2. Clone the repository
+```sh
 git clone https://github.com/danko1122q/word-count-plugins ~/.config/lex/plugins/word-count
+```
+
+Nama folder tujuan `word-count` ditentukan langsung di akhir perintah clone.
+
+## Update
+```sh
+git -C ~/.config/lex/plugins/word-count pull
 ```
 
 ## Configuration
 
-You can toggle the display settings inside `word_count.lua`:
+Buka `word_count.lua` dan sesuaikan opsi berikut:
 
-- `KEEP_DEFAULT_RIGHT = false`: Hides the language ID (default).
-- `KEEP_DEFAULT_RIGHT = true`: Shows the language ID next to the stats.
+- `KEEP_DEFAULT_RIGHT = false` — Menyembunyikan language ID *(default)*.
+- `KEEP_DEFAULT_RIGHT = true` — Menampilkan language ID di sebelah stats.
 
 ## Directory Structure
+```
+~/.config/lex/plugins/
+└── word-count/
+    └── word_count.lua
+```
 
-For the plugin to load correctly, ensure the following structure:
+## Uninstall
+```sh
+rm -rf ~/.config/lex/plugins/word-count/
 ```
-~/.config/lex/
-└── plugins/
-    └── word-count/
-        └── word_count.lua
-```
+
+## Related
+
+- [Lex Editor](https://github.com/danko1122q/lex)
+- [Syntax Plugin](https://github.com/danko1122q/syntax-plugin-lex)
