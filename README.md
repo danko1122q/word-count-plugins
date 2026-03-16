@@ -41,5 +41,5 @@ rm -rf ~/.config/lex/plugins/word-count/
 
 ## Related
 
-- [Lex Editor](https://github.com/danko1122q/lex)
+- [Lex Editor](https://github.com/danko1122q/lex=editor)
 - [Syntax Plugin](https://github.com/danko1122q/syntax-plugin-lex)
